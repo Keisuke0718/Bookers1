@@ -6,4 +6,5 @@
   <p><%= @book.body %></p>
 
   <%= link_to "Edit", edit_todolist_path(@book.id) %>
-  <%= link_to "Destroy", destroy_todolist_path(@book.id), method: :delete, "data-confirm" => "本当に削除しますか？" %>
+  |
+  <%= link_to "Back", back_todolist_path(@book.id) %>

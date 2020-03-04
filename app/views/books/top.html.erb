@@ -1,15 +1,22 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>WebCampBackendNew</title>
+		<meta charset="UTF-8">
 	</head>
 	<body>
-		<h1>投稿一覧</h1>
-        <% @books.each do |book| %>
-        <p>タイトル</p>
-          <span>
-            <%= link_to book.title, book_path(book.id) %>
-          </span>
-        <% end %>
+		<h1>
+		 ようこそ
+		 <strong>Bookers</strong>
+		 へ！
+		</h1>
+        <p>
+         <strong>Bookers</strong>
+         では、さまざまな書籍に関するあなたの意見や
+        </p>
+        <p>
+         印象を共有し交換することができます
+        </p>
+
+        <%= link_to "Start", todolists_path %>
 	</body>
 </html>

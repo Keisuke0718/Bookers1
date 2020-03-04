@@ -1,4 +1,11 @@
 class TodolistsController < ApplicationController
+  def top
+  end
+
+  def start
+    redirect_to todolists_path
+  end
+
   def new
   	@book = Book.new
   end
@@ -11,6 +18,7 @@ class TodolistsController < ApplicationController
 
   def index
   	@books = Book.all
+  	@book = Book.new
   end
 
   def show
@@ -31,6 +39,11 @@ class TodolistsController < ApplicationController
     book = Book.find(params[:id])
     book.destroy
     redirect_to todolists_path
+  end
+
+  def back
+  	book = Book.find(params[:id])
+  	redirect_to todolists_path
   end
 
   private
