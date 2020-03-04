@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-  get 'top' => 'books#top'
+  get 'top' => 'todolists#top'
+  get 'start' => 'todolists#start'
   get 'todolists/new'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   post 'todolists' => 'todolists#create'
