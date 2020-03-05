@@ -40,9 +40,12 @@ table {
   display: table;
   border-collapse: separate;
   border-spacing: 2px;
-  width: 100%;
 }
 thead {
   display: table-header-group;
   text-align: center;
+}
+.flash{
+	color: #008000;
+	margin: 33px;
 }
